@@ -168,9 +168,17 @@ You can direct the contents of a file into a program
 `grep "error-log-txt" < ls.txt 1> ls2.txt 2> /dev/null` throw away errors
 
 ## Pipes
-
+takes stdout and put it in stdin
 `cat ls.txt | grep "error-log.txt` - finds error-log.txt in the output of ls.txt
-`ps aux | grep "ps aux"
+`ps aux | grep "ps aux"` - find just aux from all the processes
+`yes n | rm -i *.txt` - answers no to all removals 
+
+## Users, Grpups & Permissions
+
+`whoami` - will output the current user
+
+
+
 
 
 
