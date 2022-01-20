@@ -177,6 +177,8 @@ takes stdout and put it in stdin
 
 `whoami` - will output the current user
 
+## user permissionss
+
 
 
 
