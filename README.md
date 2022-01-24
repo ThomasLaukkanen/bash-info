@@ -178,6 +178,33 @@ takes stdout and put it in stdin
 `whoami` - will output the current user
 
 ## user permissionss
+`whomami` - see which user you are
+`cat /etc/passwd` - see all users
+`sudo useradd thomas` - create user thomas
+`sudo passwd thomas` - create password for thomas
+`su thomas` - change user to thomas
+`sudo userdel thomas` - delete user
+`ls -l` - see permissions example d rwx rwx rwx | d or -  means that is a directory or file. | r = read  w = write x=execute | user - group - everyone
+`sudo chown ubuntu:thomas file.txt ` - change owner of file group:user 
+`sudo chmod u=rw,g=rw,o=rw file.txt` - u = user(read write) g = group(read write) o = other(read write)
+`chmod 777 file.txt` - read write execute for user,group,other DANGEROUS ALL PERMISSIONS
+`chmod +x file.txt` - adds exection permission for user,group,others (works with r and w also)
+`chmod -x file.txt` - remove execetion permission for user,group, others (works with r and w also)
+
+## Environments
+  
+
+`printenv` - see all envoirment variables'
+`echo hello my name is $USER` - hello my name is root
+`USER=thomas echo hello my name is $USER` - hello mt name is thomas(just for this command)
+`GREETING=Hello this is a session variable` - Will stay allive until you close the terminal. use $GREETING
+`/etc/environment`- will modify every users environment(BAD)
+`/etc/profile`-  will modify every users environment(BAD)
+`/etc/bashrc` -  will modify every users environment(BAD)
+`.bashrc`-  in your home directory - Add your envoirment variables here
+`.bash_profile` - add this ``if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi`
 
 
 
