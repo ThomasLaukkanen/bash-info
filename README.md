@@ -201,15 +201,74 @@ takes stdout and put it in stdin
 `/etc/environment`- will modify every users environment(BAD)
 `/etc/profile`-  will modify every users environment(BAD)
 `/etc/bashrc` -  will modify every users environment(BAD)
-`.bashrc`-  in your home directory - Add your envoirment variables here
-`.bash_profile` - add this ``if [ -f ~/.bashrc ]; then
+`.bashrc`-  in your home directory - Add your envoirment variables here export VARIABLE=value
+`.bash_profile` - add this `if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi`
 
+## Proceses
 
+`ps` - see all processes running
+`kill -s SIGKILL <pid>` - kill the process with pid
+ `kill -9` - same as above
+`ps aux` - shows all processes running  from everyone ,including all system processes
+ `ps aux | grep ps` - find a process includes to things that have just `ps`  
+  `sleep 200 &` - & MAKES THE PROCESS RUN IN BG GOOD FOR proceces or scripts that takes long time
+  `jobs` - see what is running
+  `bg 1` - resume the stopped proceces in the background
+  `fg 1` -reattach to the process
+  `jobs -l` - if you need the pid to kill it
+  
+  
+  ## EXIT CODES
+  `date` - shows date
+  `echo $?` - how did the last program exit? 0 = exicited succesfully
+  ### exit codes
+    0: means it was successful. Anything other than 0 means it failed
+    1: a good general catch-all "there was an error"
+    2: a bash internal error, meaning you or the program tried to use bash in an incorrect way
+    126: Either you don't have permission or the file isn't executable
+    127: Command not found
+    128: The exit command itself had a problem, usually that you provided a non-integer exit code to it
+    130: You ended the program with CTRL+C
+    137: You ended the program with SIGKILL
+    255: Out-of-bounds, you tried to exit with a code larger than 255
+`
+  
+  ## Run if first one succeeds
+  `touch status.txt && date >> status.txt && uptime >> status.txt` - runs three commands in a row if previous command is succeful USE `&&`
+  
+  ## Run if first onee fails
+  
+  `false || echo IT FAILED` - USE `||` if you want to run a command after something failed
+  
+  ## Always run
+  false ; true ; echo everything runs - USE `;` to always run
+ 
+  ##Subcommands
+  echo this show who the user is wuth a subcommand $(whoami) - use `$(yoursubcommand)`
+  echo $(date +%x) - $(uptime) >> log.txt - log the date and uptime to log.txt
+  
+  
+  ## SSH
 
-
-
+  `ssh-keygen -t rsa` - generate a new ssh key
+  `ls ~/.ssh` - idrsa(privatekey) idrsa.pub(public key)
+  `cat ~/.ssh/id_rsa.pub` - copy this public key
+  `vi ~/.ssh/autorized_keys` - paste the public key to the machine you want to connect to
+  `chmod 700 ~/.ssh` - give the right permissons
+  `chmod 600  ~/.ssh/authorized_keys` -give the right permissons
+  `ifconfig` - find your ip that you can connect to
+  `ssh <user>@<ip adress>` - connect to the target with the user and ip
+  
+  ## SFTP
+  sftp <user>@<ip> - good for moving files from your computer to the host computer use `l` infront of the command you want to run on the targets computer
+  `lpwd` -pwd on target machine
+  `lls` - ls on target machine
+  `get` - download from target machine
+  `put` - upload something to target machine
+  
+  
 
 
 
