@@ -1,29 +1,28 @@
-# Bash-info
+# CHEATSHEET BASH
+CREDITS to Brian Holt from frontendmasters. These are commands learned from the great course introduction to the linux command line .
 
 ## Useful bash commands
 
-Change directory
-`cd`
+`cd` - Change directory
 
-See which directory you are in
-`pwd`
+`pwd` - See which directory you are in
 
-List all files in the directory you are in
-`ls`
-See Permisions for files
-`ls -l`
-Show hidden files also
-`ls -la`
-See Permisions for files
-`ls -lsah`
+`ls` -List all files in the directory you are in
+
+`ls -l` - See Permisions for files
+
+`ls -la` - Show hidden files also
+
+`ls -lsah` - See Permisions for files
 
 
 
 ## HELP
 
-Use the flag 
-`--help`
+Use the flag  `--help`
+
 Example `pwd --help`
+
 ## FLAGS
 
 `-` flag = short version example `ls -a`
