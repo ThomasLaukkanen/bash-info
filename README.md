@@ -441,6 +441,47 @@ fi`
   
   `pm2 status` - see status of server
   `pm2 save` - save file - save the config for startup
+  
+  ## github repo
+   Create new repository
+  
+  `cd ~/.ssh/` - change to .ssh folder on the server
+  
+  `ssh-keygen` -create new key
+  
+  `cat id_rsa.pub` - copy key to github settings/add new ssh key
+  
+  `cd /var/www/app` - move to app directory on server
+  
+  `git remote add origin git@github.com:ThomasLaukkanen/nginx-server.git` - add ssh origin to your repo
+  
+`vi .gitignore` - add node_modules/
+ 
+ `git commit -am 'modified' `- add all files that ar emodified
+  
+`git push origin master` - push files
+  
+`clone git@github.com:ThomasLaukkanen/nginx-server.git` - clone the repo to your computer and work from there. Pull changes on your server
+
+  ## Find things on your server
+  `find /var/log/nginx -type f -name "*.log*"`  - find all logg files
+  
+  `find / -type d -name log` - find all directories with the name log
+  
+  `zgrep FILE` - search inside gzip file
+  
+  `ps aux | grep node`
+  
+  ![image](https://user-images.githubusercontent.com/66567520/151387118-e246c44b-03ec-439b-894b-4685668dd0d4.png)
+  
+  ## nginx
+  
+  ![image](https://user-images.githubusercontent.com/66567520/151388361-765853a8-0b58-4382-be6c-471e83c7e1e9.png)
+  
+  ![image](https://user-images.githubusercontent.com/66567520/151388671-be683f52-0c97-449f-9bdb-20df3e64aa0a.png)
+  
+![image](https://user-images.githubusercontent.com/66567520/151389060-131707a4-2f42-4947-a56d-d944fb92436e.png)
+
 
 
 
