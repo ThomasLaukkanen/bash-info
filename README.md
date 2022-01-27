@@ -368,17 +368,67 @@ fi`
   `put` - upload something to target machine
   
   
+  ### Servers
+  `sudo less /var/log/auth.log` - see who tried to login to your server
+  `sudo tail -f /var/log/auth.log` - see who tried to login to your server with `-f` follows
+  
+  ### ADD SSH FOR USER
+  `usermod -aG sudo $USERNAME` - create a new user $USERNAME is your naew name
+  `cd ~` - change to root
+  
+  `mkdir -p ~/.ssh` - create directory if it dosnt exist
+  
+  `vi ~/.ssh/authorized_keys` - open
+  
+`ssh <user>@ip` - log in with your new user
+ 
+ `chmod 644 ~/.ssh/authorized_keys` - change permissions
+`sudo vi /etc/ssh/sshd_config` - disable root login CHANGE `PermitRootLin` no
+  `sudo servive sshd restart` - restart ssh deamon
+  
+  ## Nginx
+  Reverse proxy
+  Web server
+  Proxy server
+`sudo apt install nginx` - install nginx x on the server
+  
+`sudo service nginx start` - start nginx
+  
+`sudo less /etc/nginx/sites-available/default` - show nginx configuration
+  
+`sudo vi /var/www/html/index.html` - default page
+  
+`sudo apt install nodejs npm` - install nodejs and npm
+  
+ `sudo apt install git' - install git
+  
+ `sudo chown _R $USER:$USER /var/www` - change permissions
+ 
+ `mkdir /var/www/app` - create app directory
+  
+`cd /var/www/app` - change to the directory
+  
+`git init` - initialize git repo
+  
+`mkdir -p ui/js ui/html /ui/css` - create three directories
+  
+ `touch app.js` - create app.js files
+  
+  `npm init` - intialize project
+  
+  `npm i express --save` - install express
+  
+`vi app.js` - change app.js file create your express server
+  
+`node app.js` - run your app
+ 
+`sudo vi /etc/nginx/sites-available/default` - change PORT to 3000
 
+![image](https://user-images.githubusercontent.com/66567520/151360453-65547408-1fe2-4048-8f79-da39f01b057b.png)
 
-
-
-
-
-
-
-
-
-
+`sudo service nginx reload` - restart yourg nginx server
+  
+`node app.js` - start your server again
 
 
 
