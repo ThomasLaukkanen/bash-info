@@ -481,10 +481,39 @@ fi`
   ![image](https://user-images.githubusercontent.com/66567520/151388671-be683f52-0c97-449f-9bdb-20df3e64aa0a.png)
   
 ![image](https://user-images.githubusercontent.com/66567520/151389060-131707a4-2f42-4947-a56d-d944fb92436e.png)
+ 
+ ## Security
+  --SSH
+  --Firewalls
+  --Updates
+  --Two facton authentication
+  --VPN
 
+  `sudo apt install unattended-upgrades` - install unattended upgrades
+  
+  `less /etc/apt/apt.conf.d/50unattended-upgrades`
+  
+`sudp apt install nmap` -install portscanner
+  
+  `nmap YOURIP` - scan open ports
+  
+  `nmap -sV IPADRESS` -more details
+  
+`less /etc/services` - see ports
 
-
-
+  ![image](https://user-images.githubusercontent.com/66567520/151450874-3e2d4dd9-06ce-4a4b-82a2-c7868f42d1e5.png)
+  
+  `sudo ufw status` - see if firewall is running
+  
+  `sudo ufw enable`- start firewalll
+  
+  `sudo ufw allow ssh` - allow ssh
+  
+  `sudo ufw allow http` - allow http
+  `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+  ` sudo bash nodesource_setup.sh`
+`sudo apt install nodejs`
+`sudo npm update -g`
 
 
 
