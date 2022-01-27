@@ -430,6 +430,17 @@ fi`
   
 `node app.js` - start your server again
 
+  ## Process managaer
+   keep the processes alive
+  
+  `sudo npm i -g pm2` - install process mananger globaly
+  
+  `pm2 start app.js` - start your server with pm2 in the background
+  
+  `pm2 startup` - setup auto restart the pm2 when you restart your server
+  
+  `pm2 status` - see status of server
+  `pm2 save` - save file - save the config for startup
 
 
 
