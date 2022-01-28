@@ -94,6 +94,7 @@ SHIFT+CTRL+V      - PASTE
 Send a nofication to the program
 
 CTRL + C - SIGINT - Interrupt what the program is doing and stop
+
 CTRL + D - SIGQUIT - Quits the program. sometimes works. Try `exit` closes the terminal
 
 SIGTERM if you use `kill` program it sends SIGTERM to the program to kill it
@@ -116,7 +117,9 @@ CTRL - X Exit Nano
 
 ### Vim Vi IMproved
 `vim textfile.txt`
+
 Shortcuts
+
 Press ESQ
 
 i - Insert mode. Start writing
@@ -510,9 +513,13 @@ fi`
   `sudo ufw allow ssh` - allow ssh
   
   `sudo ufw allow http` - allow http
+  
   `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+  
   ` sudo bash nodesource_setup.sh`
+  
 `sudo apt install nodejs`
+  
 `sudo npm update -g`
 
 
