@@ -514,13 +514,13 @@ fi`
   
   `sudo ufw allow http` - allow http
   
-  `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+  `curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh - download node
   
-  ` sudo bash nodesource_setup.sh`
+  `sudo bash nodesource_setup.sh` - run bashscript
   
-`sudo apt install nodejs`
+`sudo apt install nodejs` - install node
   
-`sudo npm update -g`
+`sudo npm update -g` - update packages
 
 
 
