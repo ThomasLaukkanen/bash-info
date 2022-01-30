@@ -460,7 +460,7 @@ fi`
   
 `vi .gitignore` - add node_modules/
  
- `git commit -am 'modified' `- add all files that ar emodified
+ `git commit -am 'modified' `- add all files that are modified
   
 `git push origin master` - push files
   
@@ -508,7 +508,7 @@ fi`
   
   `sudo ufw status` - see if firewall is running
   
-  `sudo ufw enable`- start firewalll
+  `sudo ufw enable`- start firewall
   
   `sudo ufw allow ssh` - allow ssh
   
