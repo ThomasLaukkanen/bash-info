@@ -521,7 +521,14 @@ fi`
 `sudo apt install nodejs` - install node
   
 `sudo npm update -g` - update packages
+  
+## HTTP
 
+  ![image](https://user-images.githubusercontent.com/66567520/151871390-167f6b54-fb9a-493b-be27-4ec97ae5790f.png)
+  
+  Get a https certifcate
+  https://certbot.eff.org/
+  
 
 
 
