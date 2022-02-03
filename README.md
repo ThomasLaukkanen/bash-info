@@ -37,13 +37,11 @@ Example show all directorys but ingore snap
 Goes to home directory `cd ~`
 
 ## Slash /
-Goes to root `cd /`
-
+`cd /` - Goes to root 
 
 ## Tab completion
 Use tab to complete to the file name
 `cat i` PRESS TAB will autocomplete to `cat index.html` if you have that file in your directory
-
 
 ## Reverse Search
 Find old commands that you wrote from latest to oldest
