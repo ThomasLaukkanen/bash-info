@@ -527,6 +527,15 @@ fi`
   Get a https certifcate
   https://certbot.eff.org/
   
+  `sudo apt install htop` - install htop
+  
+  ![image](https://user-images.githubusercontent.com/66567520/152643136-0bfe7c36-4f78-4c03-8286-c6b9e1aee083.png)
+  
+  ![image](https://user-images.githubusercontent.com/66567520/152643154-ed4f94d2-0792-4c9b-94ac-4a3ff4ae365f.png)
+
+  ![image](https://user-images.githubusercontent.com/66567520/152644304-5558d3f0-7596-42dc-b3b5-701b4a91a262.png)
+  ![image](https://user-images.githubusercontent.com/66567520/152644328-147ae331-d4e7-42be-bf32-2619155d26ef.png)
+
 
 
 
