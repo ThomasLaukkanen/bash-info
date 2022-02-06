@@ -89,6 +89,7 @@ SHIFT+CTRL+V      - PASTE
 
 
 ## Signals
+
 Send a nofication to the program
 
 CTRL + C - SIGINT - Interrupt what the program is doing and stop
@@ -114,6 +115,7 @@ CTRL - O Write out/ Will save the file
 CTRL - X Exit Nano  
 
 ### Vim Vi IMproved
+
 `vim textfile.txt`
 
 Shortcuts
@@ -139,6 +141,7 @@ i - Insert mode. Start writing
 :wq - save and quit the file
 
 ### Interaction with files
+
 `less` - read the file, quit with by press `q`, `/`to search .press `n` to go to the next. `N`to prevoius
 
 `man`- too see manual
@@ -153,7 +156,7 @@ i - Insert mode. Start writing
 
 `rm` - remove a file  `rm file.txt` or `rm -r folder` remove with confirmation or remove forcefully `rm -rf folder`
 
-`cp` - copy a file `cp file.txt file2.txt` `cp file2.txt` or to copy to a folder `cp file.txt folder/` or  to copy a folder an everything  in  it to another folder`cp -R source-directory destination-directory`
+`cp` - copy a file `cp file.txt file2.txt` `cp file2.txt` or to copy to a folder `cp file.txt folder/` or  to copy a folder an everything  in  it to another folder `cp -R source-directory destination-directory`
 
 `mv` - move a file/folder to another place or rename it `mv fil.txt newfil.txt`
 
@@ -252,9 +255,7 @@ takes stdout and put it in stdin
 
 ## Environments
   
-
 `printenv` - see all envoirment variables'
-
 
 `echo hello my name is $USER` - hello my name is root
 
